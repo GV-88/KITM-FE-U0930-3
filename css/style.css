@@ -1,0 +1,17 @@
+/* interfering with Bootstrap system, is this a correct approach? */
+.card-body,
+.list-group-item p {
+  font-size: smaller;
+}
+
+.card-body {
+  padding-top: calc(var(--bs-card-spacer-y) * 0.5);
+}
+
+.btn {
+  padding: var(--bs-btn-padding-y) calc(var(--bs-btn-padding-x) * 2);
+
+  border-radius: calc(
+    1em * var(--bs-btn-line-height) * 0.5 + var(--bs-btn-padding-y)
+  );
+}
